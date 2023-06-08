@@ -1,6 +1,6 @@
 package org.lessons.java;
 
-public class Eagle extends Animal{
+public class Eagle extends Animal implements CanFly{
     @Override
     public void sound() {
         System.out.println("eagle sound");
@@ -8,6 +8,11 @@ public class Eagle extends Animal{
 
     @Override
     public void eat() {
-        System.out.println("mouses");
+        System.out.println("meat");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm flying!!!");
     }
 }
